@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> +,- 2 Nested Array using UserInput</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form>
+        <!-- <form onsubmit="calculation(); return false;"> -->
+
+            <div class="matrix">
+                <div class="arr1">
+                    <div class="arr1_row1">
+                        <input type="number" name="arr1" id="arr1_first">
+                        <input type="number" name="arr1" id="arr1_second">
+                        <input type="number" name="arr1" id="arr1_third">
+                    </div>
+                    <div class="arr1_row2">
+                        <input type="number" name="arr1" id="arr1_fourth">
+                        <input type="number" name="arr1" id="arr1_fifth">
+                        <input type="number" name="arr1" id="arr1_sixth">
+                    </div>
+                    <div class="arr1_row3">
+                        <input type="number" name="arr1" id="arr1_seventh">
+                        <input type="number" name="arr1" id="arr1_eighth">
+                        <input type="number" name="arr1" id="arr1_nineth">
+                    </div>
+                </div>
+
+                <div class="arr2">
+                    <div class="arr2_row1">
+                        <input type="number" name="arr2" id="arr2_first">
+                        <input type="number" name="arr2" id="arr2_second">
+                        <input type="number" name="arr2" id="arr2_third">
+                    </div>
+                    <div class="arr2_row2">
+                        <input type="number" name="arr2" id="arr2_fourth">
+                        <input type="number" name="arr2" id="arr2_fifth">
+                        <input type="number" name="arr2" id="arr2_sixth">
+                    </div>
+                    <div class="arr2_row3">
+                        <input type="number" name="arr2" id="arr2_seventh">
+                        <input type="number" name="arr2" id="arr2_eighth">
+                        <input type="number" name="arr2" id="arr2_nineth">
+                    </div>
+                </div>
+            </div>
+
+            <button onclick="addition(); return false;"> Addition </button>
+            <button onclick="subtraction(); return false;"> Subtraction </button>
+
+
+        </form>
+
+        <div class="result">
+            <div class="showResult">
+                <div class="one_Result">
+                    <span class="resArr">  </span>
+                    <span class="resArr">  </span>
+                    <span class="resArr">  </span>
+                </div>
+                <div class="two_Result">
+                    <span class="resArr">  </span>
+                    <span class="resArr">  </span>
+                    <span class="resArr">  </span>
+                </div>
+                <div class="three_Result">
+                    <span class="resArr">  </span>
+                    <span class="resArr">  </span>
+                    <span class="resArr">  </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
