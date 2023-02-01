@@ -10,26 +10,11 @@ body {
     justify-content: center;
 }
 
-/* form {
-    border: 1px solid darkorange;
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 12%;
-} */
-
-/* .arr1, .arr2 {
-    display: flex;
-    flex-direction: column;
-} */ 
-
-/* kalejogajar1217 */
 
 .container {
-    width: 60%;
+    width: 50rem;
     margin-top: 8%;
-    /* border: 1px solid darkred; */
+    border: 1px solid darkred;
 }
 
 form {
@@ -41,28 +26,36 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 input {
-    width: 100px;
-    height: 35px;
+    width: 6.25rem;
+    height: 2.1875rem;
     margin: 3px;
     border: 3px solid royalblue;
     outline: none;
     border-radius: 6px;
-    font-size: 18px;
+    font-size: 1.125rem;
     padding-left: 5px;
 }
 
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 button {
-    width: 100%;
+    width: 24%;
     border: 2px solid darkorange;
     outline: none;
     padding: 8px;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
     border-radius: 12px;
-    margin-top: 50px;
+    margin: 0px 5px 0px 0px;
 }
 
 .result {
@@ -83,16 +76,53 @@ button {
     width: 35%;
 }
 
-.showResult div {
+/* .showResult div {
 
-}
+} */
 
 .showResult div span {
     display: inline-block;
     padding: 15px 30px;
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 .show {
     visibility: visible;
 }
+
+
+
+/* *********************************** MEDIA QUERIES ********************************** */
+
+@media (max-width: 700px) {
+
+    input {
+        width: 5.3rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+    input {
+        width: 4.6rem;
+    }
+}
+
+@media (max-width: 530px) {
+    button {
+        width: 48%;
+        margin-bottom: 8px;
+    }
+
+    input {
+        width: 4rem;
+    }
+}
+
+@media (max-width: 470px) {
+    input {
+        width: 3.5rem;
+    }
+}
+
+
